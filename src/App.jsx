@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Plans from "./components/Plans";
@@ -7,39 +8,20 @@ import Trainers from "./components/Trainers";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Feature from "./components/Features";
+import Quiz from "./components/Quiz";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-
-      <main>
-        <div id="home">
-          <Home />
-        </div>
-
-        <div id="feature">
-          <Feature />
-        </div>
-
-        <div id="plans">
-          <Plans />
-        </div>
-
-        <div id="about">
-          <About />
-        </div>
-
-        <div id="trainers">
-          <Trainers />
-        </div>
-
-        <div id="contact">
-          <Contact />
-        </div>
-      </main>
-
-      <Footer />
+        <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<><Home /><Feature/><Plans/><About/><Trainers/><Contact/></>} />
+          <Route exact path="/quiz" element={<Quiz/>} /> 
+          
+        </Routes>
+          <Footer />
+        </Router>
     </div>
   );
 };

@@ -5,7 +5,7 @@
     margin-right: 200px;
     padding-top: 30px;
     padding-bottom: 100px;
-    background-color: rgb(248, 41, 41);
+    background-color: rgb(36, 35, 35);
     border: 2px solid white;
     border-radius: 40px;
     height: 500px;
@@ -14,7 +14,6 @@
 .container {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
     border-radius: 10px;
     margin-left: 20px;
 }
@@ -30,7 +29,7 @@
 }
 #bmiForm {
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 input[type="text"],
@@ -57,5 +56,6 @@ input[type="submit"] {
 
 .result {
     margin-top: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
 }

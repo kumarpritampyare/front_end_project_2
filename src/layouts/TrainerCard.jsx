@@ -10,27 +10,22 @@ const TrainerCard = (props) => {
         <img className=" rounded-lg" src={props.img} alt="img" />
       </div>
       <div>
-        <h1 className=" text-xl font-semibold py-2 text-center">{props.name}</h1>
-        <div className=" flex flex-row justify-between py-4 gap-2">
-        <a href="https://www.instagram.com/_purab.sharma_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-        <BsInstagram size={25} className="hover:text-[#e53961] cursor-pointer" />
-        </a>
-
-        
-        <a href={props.facebookUrl} target="_blank" rel="noopener noreferrer">
-          <BsFacebook size={25} className=" hover:text-[#4267B2] cursor-pointer" />
-        </a>
-        <a href={props.twitterUrl} target="_blank" rel="noopener noreferrer">
-          <RiTwitterXFill size={25} className="cursor-pointer" />
-        </a>
+        <h1 className="text-xl font-semibold py-2 text-center">{props.name}</h1>
+        <div className="flex flex-row justify-between py-4 gap-2">
+          <a href={`https://www.instagram.com/${props.instagramUsername}`} target="_blank" rel="noopener noreferrer">
+            <BsInstagram size={25} className="hover:text-[#e53961] cursor-pointer" />
+          </a>
+          <a href={`https://www.facebook.com/${props.facebookUsername}`} target="_blank" rel="noopener noreferrer">
+            <BsFacebook size={25} className="hover:text-[#4267B2] cursor-pointer" />
+          </a>
+          <a href={`https://www.twitter.com/${props.twitterUsername}`} target="_blank" rel="noopener noreferrer">
+            <RiTwitterXFill size={25} className="cursor-pointer" />
+          </a>
         </div>
+
       </div>
     </div>
   );
 };
 
 export default TrainerCard;
-
-
-
-

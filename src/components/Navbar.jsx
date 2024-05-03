@@ -19,60 +19,60 @@ const Navbar = () => {
         </div>
 
         <nav className=" hidden md:flex items-center p-2 gap-5">
-          <Link
-            to="home"
+          <a
+            href="#home"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             Home
-          </Link>
-          <Link
-            to="feature"
+          </a>
+          <a
+           href="#feature"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             Feature
-          </Link>
-          <Link
-            to="plans"
+          </a>
+          <a
+            href="#BMI"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             BMI
-          </Link>
-          <Link
-            to="about"
+          </a>
+          <a
+          href="#About"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             About Us
-          </Link>
-          <Link
-            to="trainers"
+          </a>
+          <a
+            href="#trainers"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             Trainers
-          </Link>
-          <Link
-            to="contact"
+          </a>
+          <a
+            href="#contact"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             Contact Us
-          </Link>
+          </a>
         </nav>
 
         <div className="md:hidden flex items-center p-2" onClick={handleChange}>
@@ -83,62 +83,62 @@ const Navbar = () => {
       <div
         className={`${
           menu ? " translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-white text-black left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+        } md:hidden flex flex-col absolute bg-white text-black left-0 hrefp-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
       >
-        <Link
-          to="home"
+        <a
+          href="home"
           spy={true}
           smooth={true}
           duration={500}
           className=" hover:text-brightRed transition-all cursor-pointer"
         >
           Home
-        </Link>
-        <Link
-            to="home"
+        </a>
+        <a
+            href="home"
             spy={true}
             smooth={true}
             duration={500}
             className=" hover:text-brightRed transition-all cursor-pointer"
           >
             Feature
-          </Link>
-        <Link
-          to="plans"
+          </a>
+        <a
+          href="plans"
           spy={true}
           smooth={true}
           duration={500}
           className=" hover:text-brightRed transition-all cursor-pointer"
         >
           BMI
-        </Link>
-        <Link
-          to="about"
+        </a>
+        <a
+          href="about"
           spy={true}
           smooth={true}
           duration={500}
           className=" hover:text-brightRed transition-all cursor-pointer"
         >
           About Us
-        </Link>
-        <Link
-          to="trainers"
+        </a>
+        <a
+          href="trainers"
           spy={true}
           smooth={true}
           duration={500}
           className=" hover:text-brightRed transition-all cursor-pointer"
         >
           Trainers
-        </Link>
-        <Link
-          to="contact"
+        </a>
+        <a
+          href="contact"
           spy={true}
           smooth={true}
           duration={500}
           className=" hover:text-brightRed transition-all cursor-pointer"
         >
           Contact Us
-        </Link>
+        </a>
       </div>
     </div>
   );

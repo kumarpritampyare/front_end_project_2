@@ -3,7 +3,7 @@ import img from "../assets/img/about.png";
 
 const About = () => {
   return (
-    <div className=" min-h-screen flex flex-col md:flex-row items-center md:mx-32 mx-5">
+    <div className=" min-h-screen flex flex-col md:flex-row items-center md:mx-32 mx-5" id="About" >
       <div>
         <h1 className="text-5xl font-semibold text-center md:text-start mt-14 md:mt-0">
           About Us

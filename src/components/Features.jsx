@@ -3,7 +3,7 @@ import './Feature.css'
 
 const Feature = () => {
   return (
-    <div className="about">
+    <div className="about" id="feature">
         <div className="food">
           <div className="pic1">
             <img src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftrack-food-large.92122bef.png&w=512&q=75" alt="" />

@@ -22,7 +22,7 @@ const Plans = () => {
   }
 
   return (
-    <div className="BMI">
+    <div className="BMI" id="BMI">
       <div className="container">
         <form id="bmiForm" onSubmit={handleSubmit}>
           <label htmlFor="height">Height (cm):</label>
